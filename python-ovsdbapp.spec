@@ -10,10 +10,10 @@ A library for writing Open vSwitch OVSDB-based applications.
 Python OVSDB Application Library tests. \
 This package contains Python OVSDB Application Library test files.
 
-%if 0%{?el8} || 0%{?redos}
-%global el_python3_pkgversion 3
-%else
+%if 0%{?el7}
 %global el_python3_pkgversion 36
+%else
+%global el_python3_pkgversion 3
 %endif
 
 %bcond_with tests
