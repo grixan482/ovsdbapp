@@ -59,10 +59,12 @@ BuildRequires:  python3-openvswitch
 
 
 %build
+export PBR_VERSION=%{version}
 %{py3_build}
 
 
 %install
+export PBR_VERSION=%{version}
 %{py3_install}
 
 
